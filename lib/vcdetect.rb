@@ -4,6 +4,10 @@ require 'version'
 #
 # VCDetect - detect version control software for file paths
 #
+# Assumes version control data is stored on the file system
+# in plain fashion, rather than meta-managed by
+# Eclipse, Visual Studio, etc.
+#
 module VCDetect
   HOME = ENV['HOME']
   PARENT_OF_HOME = File.expand_path('..', HOME)

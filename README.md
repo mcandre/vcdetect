@@ -12,6 +12,8 @@ https://rubygems.org/gems/vcdetect
 
 vcdetect detects which version control software manages certain file paths.
 
+Assumes version control data is stored on the file system in plain fashion, rather than meta-managed by Eclipse, Visual Studio, etc.
+
 # EXAMPLES
 
 ```
