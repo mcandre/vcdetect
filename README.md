@@ -1,4 +1,4 @@
-# vcdetect - detect version control software for file paths
+# vcdetect - detect which version control software manages a file path
 
 # HOMEPAGE
 

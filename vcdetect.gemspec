@@ -2,7 +2,7 @@ require './lib/version'
 
 Gem::Specification.new { |s|
   s.name = 'vcdetect'
-  s.summary = 'detect version control software for file paths'
+  s.summary = 'detect which version control software manages a file path'
   s.description = 'See README.md for example usage'
   s.license = 'FreeBSD'
 
