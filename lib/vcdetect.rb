@@ -14,8 +14,9 @@ module VCDetect
   #
   VC2FILE = {
     accurev: 'site_slice',
-    bzr: '.bzr',
     admsconsole: 'Vault',
+    bzr: '.bzr',
+    cleartool: 'default.magic',
     cvs: 'CVS',
     darcs: '_darcs',
     git: '.git',
