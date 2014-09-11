@@ -37,5 +37,5 @@ Then(/^the output is correct for each test$/) do
 
   lines_parent_of_home = @cucumber_parent_of_home.split("\n")
   expect(lines_parent_of_home.length).to eq(1)
-  expect(lines_parent_of_home[0]).to match(%r(^#{VCDetect::PARENT_OF_HOME}\: none$))
+  expect(lines_parent_of_home[0]).to match(%r(^#{VCDetect::PARENT_OF_HOME}\: unknown$))
 end

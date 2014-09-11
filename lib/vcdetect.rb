@@ -53,7 +53,7 @@ module VCDetect
     if !File.directory?(path)
       detect(parent)
     elsif path == PARENT_OF_HOME
-      :none
+      :unknown
     else
       software = DIRS.select do |vc_dir|
         Dir.new(path).entries.include?(vc_dir)

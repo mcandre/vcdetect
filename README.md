@@ -28,7 +28,7 @@ $ vcdetect examples/curly/README.md
 examples/curly/README.md: cvs
 
 $ vcdetect ~
-/Users/andrew: none
+/Users/andrew: unknown
 ```
 
 # REQUIREMENTS
