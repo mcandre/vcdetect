@@ -26,6 +26,7 @@ module VCDetect
     cmvc: 'vc',
     cvs: 'CVS',
     darcs: '_darcs',
+    dcvs: 'DCVSMETA',
     git: '.git',
     hci: 'harvest.sig',
     hg: '.hg',
