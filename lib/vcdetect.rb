@@ -34,6 +34,7 @@ module VCDetect
     mcvs: 'MCVS',
     mtn: '_MTN',
     p4: 'depot',
+    plastic: '.plastic',
     qvcs: 'qvcsMetaData',
     razor: 'RAZOR_UNIVERSE',
     rcs: 'RCS',
