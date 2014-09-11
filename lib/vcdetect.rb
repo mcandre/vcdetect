@@ -24,6 +24,7 @@ module VCDetect
     hci: 'harvest.sig',
     hg: '.hg',
     p4: 'depot',
+    pcli: '.metadata',
     rcs: 'RCS',
     scss: 'SCSS',
     svn: '.svn'
