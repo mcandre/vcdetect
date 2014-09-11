@@ -8,6 +8,7 @@ Given(/^the program has finished$/) do
   @cucumber_shemp = `vcdetect examples/shemp/`
   @cucumber_examples = `vcdetect examples/`
   @cucumber_parent_of_home = `vcdetect #{VCDetect::PARENT_OF_HOME}`
+  @cucumber_version = `vcdetect -v`
 end
 
 Then(/^the output is correct for each test$/) do
@@ -38,4 +39,8 @@ Then(/^the output is correct for each test$/) do
   lines_parent_of_home = @cucumber_parent_of_home.split("\n")
   expect(lines_parent_of_home.length).to eq(1)
   expect(lines_parent_of_home[0]).to match(%r(^#{VCDetect::PARENT_OF_HOME}\: unknown$))
+
+  lines_version = @cucumber_version.split("\n")
+  expect(lines_version.length).to eq(1)
+  expect(lines_version[0]).to match(%r(^vcdetect .+$))
 end

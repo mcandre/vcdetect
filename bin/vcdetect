@@ -14,7 +14,7 @@ def main
     end
 
     option.on('-v', '--version', 'Print version info') do
-      puts "vcdetect #{EnLint::VERSION}"
+      puts "vcdetect #{VCDetect::VERSION}"
       exit
     end
   end
