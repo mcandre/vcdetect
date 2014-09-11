@@ -21,6 +21,7 @@ module VCDetect
     accurev: 'site_slice',
     admsconsole: 'Vault',
     arx: '_arx',
+    bk: 'BitKeeper',
     bzr: '.bzr',
     cleartool: 'default.magic',
     cmvc: 'vc',
