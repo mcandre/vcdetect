@@ -27,6 +27,7 @@ module VCDetect
     cvs: 'CVS',
     darcs: '_darcs',
     dcvs: 'DCVSMETA',
+    fossil: '_FOSSIL_',
     git: '.git',
     hci: 'harvest.sig',
     hg: '.hg',
