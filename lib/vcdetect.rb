@@ -25,6 +25,7 @@ module VCDetect
     hg: '.hg',
     p4: 'depot',
     pcli: '.metadata',
+    qvcs: 'qvcsMetaData',
     rcs: 'RCS',
     scss: 'SCSS',
     svn: '.svn'
