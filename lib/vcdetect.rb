@@ -32,6 +32,7 @@ module VCDetect
     hci: 'harvest.sig',
     hg: '.hg',
     mcvs: 'MCVS',
+    mtn: '_MTN',
     p4: 'depot',
     qvcs: 'qvcsMetaData',
     razor: 'RAZOR_UNIVERSE',
