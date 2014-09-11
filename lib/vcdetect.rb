@@ -13,6 +13,7 @@ module VCDetect
   # to version control internal data directory (omitting trailing slashes)
   #
   VC2DIR = {
+    accurev: 'site_slice',
     bzr: '.bzr',
     cvs: 'CVS',
     darcs: '_darcs',
