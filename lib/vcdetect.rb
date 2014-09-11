@@ -28,6 +28,7 @@ module VCDetect
     git: '.git',
     hci: 'harvest.sig',
     hg: '.hg',
+    mcvs: 'MCVS',
     p4: 'depot',
     qvcs: 'qvcsMetaData',
     razor: 'RAZOR_UNIVERSE',
@@ -77,7 +78,7 @@ module VCDetect
       elsif software.length == 1
         FILE2VC[software.first]
       else
-        :mix
+        software.map do |s| FILE2VC[s] end
       end
     end
   end

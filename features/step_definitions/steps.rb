@@ -29,7 +29,7 @@ Then(/^the output is correct for each test$/) do
 
   lines_shemp = @cucumber_shemp.split("\n")
   expect(lines_shemp.length).to eq(1)
-  expect(lines_shemp[0]).to match(%r(^examples/shemp/\: mix$))
+  expect(lines_shemp[0]).to match(%r(^examples/shemp/\: cvs, hg$))
 
   lines_examples = @cucumber_examples.split("\n")
   expect(lines_examples.length).to eq(1)

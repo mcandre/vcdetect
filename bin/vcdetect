@@ -30,7 +30,13 @@ def main
 
   software = VCDetect.detect(path)
 
-  puts "#{path}: #{VCDetect.detect(path)}"
+  if software.class == Array
+    software = software.map do |s|
+      s.to_s
+    end.join(', ')
+  end
+
+  puts "#{path}: #{software}"
 end
 
 begin
