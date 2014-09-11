@@ -17,6 +17,7 @@ module VCDetect
     admsconsole: 'Vault',
     bzr: '.bzr',
     cleartool: 'default.magic',
+    cmvc: 'vc',
     cvs: 'CVS',
     darcs: '_darcs',
     git: '.git',
