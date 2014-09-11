@@ -1,0 +1,45 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'optparse'
+require 'vcdetect'
+
+def main
+  option = OptionParser.new do |option|
+    option.banner = 'Usage: vcdetect [options] <file path>'
+
+    option.on('-h', '--help', 'Print usage info') do
+      puts option
+      exit
+    end
+
+    option.on('-v', '--version', 'Print version info') do
+      puts "vcdetect #{EnLint::VERSION}"
+      exit
+    end
+  end
+
+  option.parse!
+
+  if ARGV.length != 1
+    puts option
+    exit 1
+  end
+
+  path = ARGV.first
+
+  software = VCDetect.detect(path)
+
+  puts "#{path}: #{VCDetect.detect(path)}"
+end
+
+begin
+  main
+# User may quit before completion.
+rescue Interrupt
+  nil
+# May be piped to another program (e.g. `less`),
+# which is quit before completion.
+rescue Errno::EPIPE, Errno::EMFILE
+  nil
+end
