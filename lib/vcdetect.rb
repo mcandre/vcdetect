@@ -23,6 +23,7 @@ module VCDetect
     git: '.git',
     hci: 'harvest.sig',
     hg: '.hg',
+    p4: 'depot',
     rcs: 'RCS',
     scss: 'SCSS',
     svn: '.svn'
