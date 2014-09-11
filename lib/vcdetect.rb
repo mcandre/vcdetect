@@ -9,15 +9,16 @@ module VCDetect
   PARENT_OF_HOME = File.expand_path('..', HOME)
 
   #
-  # Version Control Software names (command line tools, as symbols)
-  # to version control internal data directory (omitting trailing slashes)
+  # Version control software names (command line tools, as symbols)
+  # to version control internal data file
   #
-  VC2DIR = {
+  VC2FILE = {
     accurev: 'site_slice',
     bzr: '.bzr',
     cvs: 'CVS',
     darcs: '_darcs',
     git: '.git',
+    hci: 'harvest.sig',
     hg: '.hg',
     rcs: 'RCS',
     scss: 'SCSS',
@@ -25,20 +26,20 @@ module VCDetect
   }
 
   #
-  # Version control internal data directory (omitting trailing slashes)
-  # to version Control Software names (command line tools, as symbols)
+  # Version control internal data file
+  # to version control software names (command line tools, as symbols)
   #
-  DIR2VC = VC2DIR.invert
+  FILE2VC = VC2FILE.invert
 
   #
-  # Version Control Software names (command line tools, as symbols)
+  # Version control software names (command line tools, as symbols)
   #
-  VCS = VC2DIR.keys
+  VCS = VC2FILE.keys
 
   #
-  # Version control internal data directory (omitting trailing slashes)
+  # Version control internal data files
   #
-  DIRS = VC2DIR.values
+  FILES = VC2FILE.values
 
   #
   # Detect version control software managing a file path
@@ -56,14 +57,14 @@ module VCDetect
     elsif path == PARENT_OF_HOME
       :unknown
     else
-      software = DIRS.select do |vc_dir|
+      software = FILES.select do |vc_dir|
         Dir.new(path).entries.include?(vc_dir)
       end
 
       if software.length == 0
         detect(parent)
       elsif software.length == 1
-        DIR2VC[software.first]
+        FILE2VC[software.first]
       else
         :mix
       end

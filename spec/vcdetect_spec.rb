@@ -1,18 +1,18 @@
 require 'vcdetect'
 
-describe VCDetect, '#VC2DIR' do
+describe VCDetect, '#VC2FILE' do
   it 'contains common version control software with directories' do
-    expect(VCDetect::VC2DIR[:git]).to eq('.git')
-    expect(VCDetect::VC2DIR[:hg]).to eq('.hg')
-    expect(VCDetect::VC2DIR[:svn]).to eq('.svn')
+    expect(VCDetect::VC2FILE[:git]).to eq('.git')
+    expect(VCDetect::VC2FILE[:hg]).to eq('.hg')
+    expect(VCDetect::VC2FILE[:svn]).to eq('.svn')
   end
 end
 
-describe VCDetect, '#DIR2VC' do
+describe VCDetect, '#FILE2VC' do
   it 'contains common version control directories with software' do
-    expect(VCDetect::DIR2VC['.git']).to eq(:git)
-    expect(VCDetect::DIR2VC['.hg']).to eq(:hg)
-    expect(VCDetect::DIR2VC['.svn']).to eq(:svn)
+    expect(VCDetect::FILE2VC['.git']).to eq(:git)
+    expect(VCDetect::FILE2VC['.hg']).to eq(:hg)
+    expect(VCDetect::FILE2VC['.svn']).to eq(:svn)
   end
 end
 
@@ -24,10 +24,10 @@ describe VCDetect, '#VCS' do
   end
 end
 
-describe VCDetect, '#DIRS' do
+describe VCDetect, '#FILES' do
   it 'contains common version control directories' do
-    expect(VCDetect::DIRS).to include('.git')
-    expect(VCDetect::DIRS).to include('.hg')
-    expect(VCDetect::DIRS).to include('.svn')
+    expect(VCDetect::FILES).to include('.git')
+    expect(VCDetect::FILES).to include('.hg')
+    expect(VCDetect::FILES).to include('.svn')
   end
 end
