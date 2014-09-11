@@ -39,7 +39,8 @@ module VCDetect
     razor: 'RAZOR_UNIVERSE',
     rcs: 'RCS',
     scss: 'SCSS',
-    svn: '.svn'
+    svn: '.svn',
+    teamware: 'Codemgr_wsdata'
   }
 
   #
