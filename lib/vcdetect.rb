@@ -26,6 +26,7 @@ module VCDetect
     p4: 'depot',
     pcli: '.metadata',
     qvcs: 'qvcsMetaData',
+    razor: 'RAZOR_UNIVERSE',
     rcs: 'RCS',
     scss: 'SCSS',
     svn: '.svn'
