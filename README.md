@@ -35,7 +35,7 @@ $ vcdetect ~
 
 # REQUIREMENTS
 
-* [Ruby](https://www.ruby-lang.org/) 2+
+* [Ruby](https://www.ruby-lang.org/) 1.9+
 
 # INSTALL
 
