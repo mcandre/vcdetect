@@ -1,18 +1,6 @@
 # vcdetect - detect which version control software manages a file path
 
-# HOMEPAGE
-
-https://github.com/mcandre/vcdetect
-
-# RUBYGEMS
-
-https://rubygems.org/gems/vcdetect
-
-# ABOUT
-
-vcdetect detects which version control software manages certain file paths.
-
-Assumes version control data is stored on the file system in plain, unambiguous, per-project fashion. This precludes the ability to detect arcane and offbeat version control software such as cvsnt, svk, and vss.
+`vcdetect` identifies which version control program, if any, is managing a project directory.
 
 # EXAMPLES
 
@@ -32,6 +20,20 @@ examples/curly/README.md: cvs
 $ vcdetect ~
 /Users/andrew: unknown
 ```
+
+# HOMEPAGE
+
+https://github.com/mcandre/vcdetect
+
+# RUBYGEMS
+
+https://rubygems.org/gems/vcdetect
+
+# ABOUT
+
+vcdetect detects which version control software manages certain file paths.
+
+Assumes version control data is stored on the file system in plain, unambiguous, per-project fashion. This precludes the ability to detect arcane and offbeat version control software such as cvsnt, svk, and vss.
 
 # REQUIREMENTS
 
