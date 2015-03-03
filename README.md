@@ -14,7 +14,7 @@ examples/moe/: svn
 $ vcdetect examples/curly/
 examples/curly/: cvs
 
-$ vcdetect examples/curly/README.md 
+$ vcdetect examples/curly/README.md
 examples/curly/README.md: cvs
 
 $ vcdetect ~
