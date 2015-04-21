@@ -1,4 +1,4 @@
-require 'version'
+require_relative 'version'
 
 #
 # VCDetect - detect version control software for file paths
