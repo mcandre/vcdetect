@@ -63,7 +63,7 @@ module VCDetect
   # Detect version control software managing a file path
   #
   # Assumes path exists.
-  # Assuems path is reltive to $HOME.
+  # Assuems path is relative to $HOME.
   #
   # @path a file path (String)
   #
