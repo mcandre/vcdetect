@@ -17,7 +17,7 @@ examples/curly/: cvs
 $ vcdetect examples/curly/README.md
 examples/curly/README.md: cvs
 
-$ vcdetect ~
+$ vcdetect $HOME
 /Users/andrew: unknown
 ```
 
