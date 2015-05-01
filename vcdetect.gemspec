@@ -7,7 +7,6 @@ Gem::Specification.new { |s|
   s.license = 'FreeBSD'
 
   s.version = VCDetect::VERSION
-  s.date = '2014-09-11'
 
   s.authors = ['Andrew Pennebaker']
   s.email = 'andrew.pennebaker@gmail.com'
