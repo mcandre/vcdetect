@@ -4,7 +4,7 @@
 
 # EXAMPLES
 
-```
+```console
 $ vcdetect examples/larry/
 examples/larry/: hg
 
@@ -39,11 +39,19 @@ Assumes version control data is stored on the file system in plain, unambiguous,
 
 * [Ruby](https://www.ruby-lang.org/) 2.0+
 
+## Optional
+
+* [make](https://www.gnu.org/software/make/)
+* [GNU findutils](https://www.gnu.org/software/findutils/)
+* [stank](https://github.com/mcandre/stank) (e.g. `go get github.com/mcandre/stank/...`)
+* [Python](https://www.python.org) 3+ (for yamllint)
+* [Node.js](https://nodejs.org/en/) (for eclint)
+
 # INSTALL
 
 Install via [RubyGems](http://rubygems.org/):
 
-```
+```console
 $ gem install vcdetect
 ```
 
@@ -57,7 +65,7 @@ FreeBSD
 
 Keep the code functioning:
 
-```
+```console
 $ rake test
 ```
 
@@ -65,7 +73,7 @@ $ rake test
 
 Keep the code tidy:
 
-```
+```console
 $ rake lint
 ```
 
