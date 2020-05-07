@@ -75,7 +75,3 @@ Keep the code tidy:
 ```console
 $ rake lint
 ```
-
-## Git Hooks
-
-See `hooks/`.
